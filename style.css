@@ -660,6 +660,44 @@ footer {
     font-size: 14px;
 }
 
+.page-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #181617 0%, #251B1C 100%);
+    padding: 120px 20px 60px;
+    color: var(--text-light);
+}
+
+.page-box {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.page-box h1 {
+    color: var(--accent);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.page-box h2 {
+    margin-top: 25px;
+    color: var(--accent-light);
+}
+
+.page-box p {
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+.page-box a {
+    color: var(--accent);
+}
+
+
 /* SCROLL ANIMATIONS */
 .fade-in {
     opacity: 0;
