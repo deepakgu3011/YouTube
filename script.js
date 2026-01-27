@@ -119,3 +119,12 @@ gsap.from(".instructor-avatar", {
     duration: 1,
     ease: "elastic.out(1, 0.5)"
 });
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.textContent = navMenu.classList.contains("active") ? "✖" : "☰";
+    });
+}

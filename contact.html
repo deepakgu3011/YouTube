@@ -2,10 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact Us – CodeCraft Pro</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us – Tech Tutorials</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+  <div class="header-container">
+    
+    <!-- LOGO -->
+    <div class="logo">
+       <a href="/" >
+      <img src="assets/logo1.jpeg" alt="Tech Tutorials">
+    </a>
+       <a href="/" ><span>Tech Tutorials</span></a>
+    </div>
+<div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+    <!-- NAVIGATION -->
+    <nav class="nav-links" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
 
 <div class="page-wrapper">
   <div class="page-box">
@@ -28,11 +54,22 @@
   </div>
 </div>
 <footer>
-  © 2025 CodeCraft Pro.  
+  © 2025 Tech Tutorials.  
   <a href="/">Home</a>
   <a href="about.html">About</a> |
   <a href="privacy.html">Privacy Policy</a> |
   <a href="contact.html">Contact Us</a>
 </footer>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.textContent = navMenu.classList.contains("active") ? "✖" : "☰";
+    });
+}
+</script>
 </body>
 </html>

@@ -2,17 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>About Us – CodeCraft Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us – Tech Tutorials</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+  <div class="header-container">
+    
+    <!-- LOGO -->
+    <div class="logo">
+       <a href="/" >
+      <img src="assets/logo1.jpeg" alt="Tech Tutorials">
+    </a>
+       <a href="/" ><span>Tech Tutorials</span></a>
+    </div>
+<div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+    <!-- NAVIGATION -->
+    <nav class="nav-links" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
+  </div>
+</header>
 <div class="page-wrapper">
   <div class="page-box">
-    <h1>About CodeCraft Pro</h1>
+    <h1>About Tech Tutorials</h1>
 
     <p>
-      <strong>CodeCraft Pro</strong> is a learning platform dedicated to
+      <strong>Tech Tutorials</strong> is a learning platform dedicated to
       teaching modern programming and development skills.
     </p>
 
@@ -30,7 +56,7 @@
       • YouTube-based learning resources
     </p>
 
-    <h2>Why CodeCraft Pro?</h2>
+    <h2>Why Tech Tutorials?</h2>
     <p>
       We focus on clarity, real examples, and step-by-step learning
       so you can build confidence while coding.
@@ -38,11 +64,22 @@
   </div>
 </div>
 <footer>
-  © 2025 CodeCraft Pro.  
+  © 2025 Tech Tutorials.  
   <a href="/">Home</a>
   <a href="about.html">About</a> |
   <a href="privacy.html">Privacy Policy</a> |
   <a href="contact.html">Contact Us</a>
 </footer>
 </body>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.textContent = navMenu.classList.contains("active") ? "✖" : "☰";
+    });
+}
+</script>
 </html>
