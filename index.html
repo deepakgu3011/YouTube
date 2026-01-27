@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeCraft Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="themeToggle">🌙</button>
+
+<!-- Modal -->
+<div id="subscribeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to CodeCraft Pro</h2>
+        <p>Enter your YouTube channel URL below:</p>
+        <input type="text" id="youtubeLink" placeholder="https://youtube.com/@yourchanne" value="">
+        <div class="modal-buttons">
+            <button class="modal-btn save-btn">Save & Subscribe</button>
+            <button class="modal-btn coming-soon-btn">Coming Soon</button>
+        </div>
+    </div>
+</div>
+
+<header class="hero">
+    <div class="particles"></div>
+    <h1 class="hero-title">CodeCraft Pro</h1>
+    <p class="hero-subtitle">
+        Master Modern Development with Expert Tutorials
+    </p>
+    <button class="primary-btn" id="heroSubscribe">Subscribe Now</button>
+    <div id="subscribeModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+</header>
+
+<section class="skills section fade-in">
+    <h2 class="section-title">Latest Programming Tutorials</h2>
+
+    <div class="flip-grid">
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div class="icon">🐍</div>
+                    <h3>Python Mastery</h3>
+                </div>
+                <div class="flip-back">
+                    <h3>Python Mastery</h3>
+                    <p>
+                        From fundamentals to advanced data structures, master Python's
+                        clean syntax and powerful libraries for real-world applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div class="icon">⚡</div>
+                    <h3>JavaScript Deep Dive</h3>
+                </div>
+                <div class="flip-back">
+                    <h3>JavaScript Deep Dive</h3>
+                    <p>
+                        Learn modern ES6+, asynchronous programming, DOM manipulation,
+                        and build dynamic web applications with confidence.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div class="icon">⚛️</div>
+                    <h3>React Development</h3>
+                </div>
+                <div class="flip-back">
+                    <h3>React Development</h3>
+                    <p>
+                        Build performant UI using hooks, state management, and
+                        component-driven architecture used by professionals.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div class="icon">🚀</div>
+                    <h3>Backend Engineering</h3>
+                </div>
+                <div class="flip-back">
+                    <h3>Backend Engineering</h3>
+                    <p>
+                        Design scalable APIs, manage databases, authentication, and
+                        server-side logic with Node.js & industry practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section fade-in">
+    <h2 class="section-title">Why Choose CodeCraft Pro</h2>
+
+    <div class="flip-grid">
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div class="icon">🎯</div>
+                    <h3>Clear Learning Objectives</h3>
+                </div>
+                <div class="flip-back">
+                    <h3>Clear Learning Objectives</h3>
+                    <p>
+                        Every tutorial features structured goals and measurable outcomes,
+                        ensuring you understand exactly what you'll achieve by the end
+                        of each lesson.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div class="icon">💻</div>
+                    <h3>Hands-On Projects</h3>
+                </div>
+                <div class="flip-back">
+                    <h3>Hands-On Projects</h3>
+                    <p>
+                        Build real applications whilst learning — no theory-only content.
+                        Every concept is immediately applied to practical coding challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div class="icon">👥</div>
+                    <h3>Active Community</h3>
+                </div>
+                <div class="flip-back">
+                    <h3>Active Community</h3>
+                    <p>
+                        Join an engaged community of developers who share insights,
+                        debug together, and support each other's growth journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="instructor section fade-in">
+    <h2 class="section-title">Meet The Expert</h2>
+    <div class="instructor-avatar">👨‍💻</div>
+    <p class="instructor-name">Alex Chen – Senior Software Engineer</p>
+
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-value">10+ Years</div>
+        </div>
+        <div class="stat">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-value">500K+ Students</div>
+        </div>
+        <div class="stat">
+            <div class="stat-icon">🎬</div>
+            <div class="stat-value">250+ Videos</div>
+        </div>
+    </div>
+</section>
+
+<section class="courses section fade-in">
+    <h2 class="section-title">Popular Course Series</h2>
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-icon">📚</div>
+            <div class="card-title">Beginner Bootcamp</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🌐</div>
+            <div class="card-title">Web Development</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚙️</div>
+            <div class="card-title">Full-Stack JavaScript</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🔥</div>
+            <div class="card-title">Advanced Engineering</div>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe section fade-in">
+    <h2 class="section-title light">Join 500,000+ Developers</h2>
+    <button class="primary-btn dark" id="footerSubscribe">Subscribe to Channel</button>
+</section>
+
+<footer>
+    © 2025 CodeCraft Pro. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
