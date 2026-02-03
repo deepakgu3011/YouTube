@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Tutorials</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<button id="themeToggle">🌙</button>
+
+<!-- Modal -->
+<div id="subscribeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to Tech Tutorials</h2>
+        <p>Enter your YouTube channel URL below:</p>
+        <input type="text" id="youtubeLink" placeholder="https://youtube.com/@yourchanne" value="">
+        <div class="modal-buttons">
+            <button class="modal-btn save-btn">Save & Subscribe</button>
+            <button class="modal-btn coming-soon-btn">Coming Soon</button>
+        </div>
+    </div>
+</div>
+<header class="site-header">
+  <div class="header-container">
+    
+    <!-- LOGO -->
+    <div class="logo">
+        <a href="/" >
+      <img src="../assets/logo1.jpeg" alt="Tech Tutorials">
+    </a>
+       <a href="/" ><span>Tech Tutorials</span></a>
+    </div>
+<div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+    <!-- NAVIGATION -->
+    <nav class="nav-links" id="navMenu">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+      <a href="/blog">Blog</a>
+    </nav>
+
+  </div>
+</header>
+    <main class="blog-container">
+    <h1 class="blog-title">Latest Blog Posts</h1>
+
+    <div class="blog-grid">
+
+      <!-- Post Card -->
+      <article class="blog-card">
+        <img src="/assets/images/voter.jpg" alt="Post image">
+        <h2>How to Create Voter ID Online</h2>
+        <p>Step by step guide to apply voter ID card online from home.how to upload</p>
+        <a href="/blog/article/voter-id-online.html">Read More</a>
+      </article>
+
+      <article class="blog-card">
+        <img src="/assets/images/html-tutorial.jpg" alt="Post image">
+        <h2>Basic HTML Introduction, history tag Explained</h2>
+        <p>Understand HTML, History Tags etc.here you can understand the basic concepts</p>
+        <a href="/blog/article/html-tags-history.html">Read More</a>
+      </article>
+
+      <article class="blog-card">
+        <img src="/assets/images/google-form-no-login.png" alt="Post image">
+        <h2>Google Form Without Login</h2>
+        <p>Create Google Form that users can fill without email login.</p>
+        <a href="/blog/article/google-form-no-login.html">Read More</a>
+      </article>
+
+    </div>
+  </main>
+                    
+   
+<section class="subscribe section fade-in">
+    <h2 class="section-title light">Join 500,000+ Developers</h2>
+    <button class="primary-btn dark" id="footerSubscribe">Subscribe to Channel</button>
+</section>
+<footer>
+  © 2025 Tech Tutorials.  
+  <a href="../">Home</a> |
+  <a href="../about.html">About</a> |
+  <a href="../privacy.html">Privacy Policy</a> |
+  <a href="../contact.html">Contact Us</a>|
+   <a href="/blog">Blog</a>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.textContent = navMenu.classList.contains("active") ? "✖" : "☰";
+    });
+}
+</script>
+<script src="../script.js"></script>
+</body>
+</html>
