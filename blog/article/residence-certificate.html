@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet">
+      <!-- Video.js CSS -->
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
     <link rel ="stylesheet" href="blog.css">
 </head>
@@ -93,6 +95,19 @@
     <p>
       Follow these steps to apply residence certificate online:
     </p>
+       <div style="max-width:360px;margin:30px auto;">
+      <video
+        id="shortVideo"
+        class="video-js vjs-default-skin"
+        controls
+        preload="auto"
+        width="250"
+                 
+        playsinline
+      >
+        <source src="../../assets/Bihar Residence Certificate Apply Online 2026 _ Niwas Praman Patra Kaise Banaye _.mp4" type="video/mp4">
+      </video>
+    </div>
 
     <p>
       Visit the official <a href="http://serviceonline.bihar.gov.in">RTPS Bihar </a>Bihar website, select apply for residence certificate and fill all
@@ -129,6 +144,35 @@
    <a href="/blog">Blog</a>
 </footer>
 
+    <!-- Video.js -->
+<script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+
+<!-- Google IMA SDK -->
+<script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+
+<!-- Video.js Ads -->
+<script src="https://unpkg.com/videojs-contrib-ads@6/dist/videojs-contrib-ads.min.js"></script>
+
+<!-- Video.js IMA -->
+<script src="https://unpkg.com/videojs-ima@1/dist/videojs.ima.min.js"></script>
+
+<script>
+  var player = videojs('shortVideo');
+
+  player.ima({
+    adTagUrl: "https://fantasticcommunity.com/dem/F.zMdDG/NivMZ/GTUH/YesmK9IuGZ/UBlokGPLTCYe2JNsTzYB2/MjD-gdtuNcj_Yz1lNGj/YMwGO/SWZzsoatWx1ypEdJDK0cxT",
+    debug: true
+  });
+
+  player.ready(function () {
+    player.on('play', function () {
+      player.ima.initializeAdDisplayContainer();
+      player.ima.requestAds();
+    });
+  });
+</script>
+
+
 <script>
     const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
@@ -144,3 +188,4 @@ if (menuToggle && navMenu) {
 </body>
 
 </html>
+
